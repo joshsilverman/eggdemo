@@ -54,6 +54,165 @@
   }
 }
 
+
+
+
+
+
+body {
+    height:100%;
+    overflow: hidden !important; 
+}
+
+/* title slide */
+
+#title-slide {
+    height:100%;
+}
+
+.slide table, .slide td {
+    height:100%;
+    width:100%;
+    vertical-align:middle !important;
+}
+
+
+
+
+
+/* college pix */
+
+#college-imgs {
+    position:relative;
+    height:700px;
+    overflow: hidden !important; 
+}
+
+#college img {
+    margin:100px auto 0;
+    padding:0;
+    height: 600px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* demo slide */
+
+#demo {
+    height:100%;
+    overflow:none;
+}
+
+#demo table, #demo td {
+    height:100%;
+    width:100%;
+    vertical-align:middle !important;
+}
+
+/* conversion */
+
+#conversion div {
+    position:relative;
+    text-align:center;
+}
+
+#conversion img {
+    margin:0;
+    padding:0;
+    height:700px;
+    position:absolute;
+}
+
+#cookies {}
+
+#ray {
+    display:none;
+    left:230px;
+    top:-50px;
+}
+
+/* screens */
+
+.iphone-control-container-container, .iphone-screen-container-container {
+    position:relative;
+    left:-125px;
+/*    z-index:-1;*/
+/*    height:381px;*/
+/*    width:254px;*/
+/*    overflow:hidden;*/
+}
+
+.iphone-screen-container, .iphone-control-container {
+    position:absolute;
+    left:50%;
+    z-index:-1;
+    height:600px;
+    width:254px;
+    overflow:hidden;
+}
+
+.iphone-screen, .iphone-control {
+    width:1270px !important;
+    max-width:none !important;
+    position:relative;
+/*    top: 108px;*/
+}
+
+/* biz-model */
+
+#biz-model img {
+    position:relative;
+    margin:100px auto 0;
+    padding:0;
+    height: 600px;
+}
+
+#vendo {
+    top:-100px;
+    left:-100px;
+}
+
+#looker {
+    top:-1000px;
+    left:106px;
+}
+
+#feet {
+    height:150px !important;
+    top:-276px;
+    left:150px;
+}
+
+
+/* ask */
+
+#ask h1 {
+    color:white !important;
+}
+
+/*hide arrows numbering*/
+
+.deck-next-link, .deck-prev-link, .deck-status {
+    display:none !important;
+}
+
 #title-slide {
 /*    background-color:red;*/
+}
+
+img.titled {
+    height: 70%;
+}
+
+img.no-title {
+    height: 90%;
 }
