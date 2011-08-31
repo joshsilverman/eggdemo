@@ -64,6 +64,10 @@ body {
     overflow: hidden !important; 
 }
 
+h1, h2, h3 {
+    color:white !important;
+}
+
 /* title slide */
 
 #title-slide {
@@ -181,14 +185,20 @@ body {
     left:-100px;
 }
 
+#vendo2 {
+    top:-800px;
+    left:-100px;
+    visibility:hidden;
+}
+
 #looker {
-    top:-1000px;
+    top:-1700px;
     left:106px;
 }
 
 #feet {
     height:150px !important;
-    top:-276px;
+    top:-976px;
     left:150px;
 }
 

@@ -157,6 +157,49 @@ var conversion = {
     }
 }
 
+var bizModel = {
+    pause: false,
+    start:6,
+    conversionFrame: 0,
+
+    change: function(to) {
+
+        if (to > this.start) {
+            if (this.conversionFrame == 2) {
+                this.pause = false;
+                return;
+            }
+            else this.conversionFrame++;
+        }
+        else {
+            this.pause = false;
+            this.conversionFrame = 0;
+            $('#vendo2').css({visibility:"hidden"});
+            $('#looker').fadeOut(0);
+            return;
+        }
+
+        this.pause = true;
+        var newClass = "conversion-state-" + this.conversionFrame;
+        
+        console.log(this.conversionFrame);
+        
+        switch (this.conversionFrame) {
+            case 0:
+                break;
+            case 1:
+                $('#looker').fadeIn(300);
+                break;
+            case 2:
+                $('body').animate({backgroundColor:'white'}, 50, 'linear', function() {
+                    $('#vendo2').css({visibility:"visible"});
+                    $('body').animate({backgroundColor:'#218DD2'}, 200);
+                });
+                break;
+        }
+    }
+}
+
 $(function() {
 	// Deck initialization
 	$.deck('.slide');
@@ -177,6 +220,9 @@ $(function() {
 
         /* forward to demoSlide */
         else if (from == screens.demoSlide) screens.change(to);
+
+        /* forward to bizModel */
+        else if (from == bizModel.start) bizModel.change(to);
 
     });
 

@@ -194,7 +194,7 @@ that use the API provided by core.
 			if (typeof index != 'number' || index < 0 || index >= slides.length) return;
 			
             $d.trigger(events.change, [current, index]);
-            if (screens.pause || conversion.pause || collegeShots.pause || learning.pause) return;
+            if (screens.pause || conversion.pause || collegeShots.pause || learning.pause || bizModel.pause) return;
 		    current = index;
 		    updateStates();
 		},
